@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    style="@style/card_style_new"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nl_bucket_lbl"
+            style="@style/bold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nl_bucket_lbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nl_time_lbl"
+            style="@style/bold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nl_bucket_lbl"
+            android:text="@string/nl_time_lbl" />
+
+        <TextView
+            android:id="@+id/nl_message_lbl"
+            style="@style/bold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nl_time_lbl"
+            android:text="@string/nl_message_lbl" />
+
+        <TextView
+            android:id="@+id/nl_bucket_id_tv"
+            style="@style/bold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/nl_bucket_lbl"
+            android:text="@string/nl_bucket_id"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nl_time_tv"
+            style="@style/basic_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/nl_time_lbl"
+            android:layout_below="@+id/nl_bucket_id_tv"
+            android:text="@string/nl_time_tv" />
+
+        <TextView
+            android:id="@+id/nl_message_tv"
+            style="@style/basic_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/nl_message_lbl"
+            android:layout_below="@+id/nl_time_tv"
+            android:text="@string/nl_message_tv" />
+
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

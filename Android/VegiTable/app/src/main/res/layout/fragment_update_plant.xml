@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:id="@+id/updatePlantLayout"
+    style="@style/rel_layout_overall"
+    tools:context=".ui.plant.UpdatePlantFragment">
+
+    <LinearLayout style="@style/lin_layout_overall">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/updatePlantNickname"
+            style="@style/generic_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="@string/plant_nickname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/char_edit_text"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout style="@style/hor_layout_edittext_and_btn">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updatePlantTypeDropdown"
+                style="@style/generic_dropdown"
+                android:layout_width="@dimen/_142sdp"
+                android:hint="@string/select_plant_type"
+                android:inputType="none">
+
+                <AutoCompleteTextView
+                    android:id="@+id/updatePlantTypeDropdownItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updatePlantTypeBtn"
+                style="@style/hor_layout_btn_right"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="@string/add_type" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updatePhMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/ph_min"
+                android:layout_width="@dimen/_140sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/decimal_edit_text"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updatePhMaxInput"
+                style="@style/edit_text_right"
+                android:hint="@string/ph_max"
+                android:layout_width="@dimen/_140sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updatePPMMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/ppm_min"
+                android:layout_width="@dimen/_140sdp">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updatePPMMaxInput"
+                style="@style/edit_text_right"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/ppm_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateLightMinInput"
+                style="@style/edit_text_left"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/light_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateLightMaxInput"
+                style="@style/edit_text_right"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/light_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateHumidityMinInput"
+                style="@style/edit_text_left"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/humid_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateHumidityMaxInput"
+                style="@style/edit_text_right"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/humid_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateTempMinInput"
+                style="@style/edit_text_left"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/temp_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateTempMaxInput"
+                style="@style/edit_text_right"
+                android:layout_width="@dimen/_140sdp"
+                android:hint="@string/temp_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/updatePlantPhase"
+            style="@style/generic_edit_text"
+            android:layout_width="@dimen/_290sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="@string/plant_phase">
+
+            <com.google.android.material.textfield.TextInputEditText style="@style/char_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout style="@style/hor_layout_edittext_and_btn"
+            android:layout_height="@dimen/_50sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/updateImageName"
+                style="@style/generic_edit_text"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/img_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/char_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updateImgBtn"
+                style="@style/hor_layout_btn_right"
+                android:layout_width="@dimen/_142sdp"
+                android:layout_height="match_parent"
+                android:text="@string/add_img" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updatePlantBtn"
+            style="@style/rounded_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/update_plant" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

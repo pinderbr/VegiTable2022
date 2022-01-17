@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/plantCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    style="@style/card_style_new">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/viewPlantNameAndType"
+            style="@style/card_text_header"
+            android:textColor="@color/white"
+            android:text="@string/plant_name_and_type" />
+
+        <ImageView
+            android:id="@+id/viewPlantImage"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@id/viewPlantNameAndType"
+            android:layout_marginTop="@dimen/_15sdp"
+            tools:src="@drawable/vector_grass" />
+
+        <ImageView
+            android:id="@+id/editPlantButtonOnPlantListView"
+            style="@style/card_icons"
+            app:srcCompat="@drawable/vector_edit" />
+
+        <ImageView
+            android:id="@+id/archive_bucket_button"
+            style="@style/card_icons"
+            android:layout_below="@id/editPlantButtonOnPlantListView"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:srcCompat="@drawable/vector_archive" />
+
+        <TextView
+            android:id="@+id/viewPlantDetailsPhase"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/viewPlantNameAndType"
+            android:layout_toEndOf="@id/viewPlantImage"
+            android:text="@string/plant_phase" />
+
+        <TextView
+            android:id="@+id/viewPlantDetailsPH"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/viewPlantDetailsPhase"
+            android:layout_toEndOf="@id/viewPlantImage"
+            android:text="@string/ph_value" />
+
+        <TextView
+            android:id="@+id/plantPhVal"
+            style="@style/card_text_list_items"
+            android:layout_toRightOf="@+id/viewPlantDetailsPH"
+            android:layout_below="@+id/viewPlantDetailsPhase"/>
+
+
+        <TextView
+            android:id="@+id/viewPlantDetailsPPM"
+            style="@style/card_text_list_items"
+            android:text="@string/ppm_value"
+            android:layout_toEndOf="@id/viewPlantImage"
+            android:layout_below="@id/viewPlantDetailsPH"/>
+
+        <TextView
+            android:id="@+id/plantPpmVal"
+            style="@style/card_text_list_items"
+            android:layout_toEndOf="@+id/viewPlantDetailsPPM"
+            android:layout_below="@+id/viewPlantDetailsPH"
+            />
+
+        <TextView
+            android:id="@+id/viewPlantDetailsTemp"
+            style="@style/card_text_list_items"
+            android:text="@string/temp_value"
+            android:layout_toEndOf="@id/viewPlantImage"
+            android:layout_below="@id/viewPlantDetailsPPM"/>
+
+        <TextView
+            android:id="@+id/plantTempVal"
+            style="@style/card_text_list_items"
+            android:layout_toEndOf="@+id/viewPlantDetailsTemp"
+            android:layout_below="@+id/viewPlantDetailsPPM"
+            />
+
+        <TextView
+            android:id="@+id/viewPlantDetailsLight"
+            style="@style/card_text_list_items"
+            android:text="@string/light_value"
+            android:layout_toEndOf="@id/viewPlantImage"
+            android:layout_below="@id/viewPlantDetailsTemp"/>
+
+        <TextView
+            android:id="@+id/plantLightVal"
+            style="@style/card_text_list_items"
+            android:layout_toEndOf="@+id/viewPlantDetailsLight"
+            android:layout_below="@+id/viewPlantDetailsTemp"
+            />
+
+        <TextView
+            android:id="@+id/viewPlantDetailsHumidity"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/viewPlantDetailsLight"
+            android:layout_toEndOf="@id/viewPlantImage"
+            android:text="@string/humid_value"/>
+
+        <TextView
+            android:id="@+id/plantHumidityVal"
+            style="@style/card_text_list_items"
+            android:layout_toEndOf="@+id/viewPlantDetailsHumidity"
+            android:layout_below="@+id/viewPlantDetailsLight"
+            />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

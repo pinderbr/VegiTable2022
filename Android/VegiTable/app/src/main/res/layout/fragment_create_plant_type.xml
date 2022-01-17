@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:id="@+id/addPlantTypeLayout"
+    style="@style/rel_layout_overall"
+    tools:context=".ui.planttype.CreatePlantTypeFragment">
+
+    <LinearLayout
+        style="@style/lin_layout_overall"
+        android:layout_centerVertical="true"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addTypeName"
+            style="@style/generic_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:hint="@string/plant_nickname">
+
+            <com.google.android.material.textfield.TextInputEditText style="@style/char_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout style="@style/hor_layout_min_max" android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypePhMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/ph_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/edit_text_right"
+                android:id="@+id/addTypePhMaxInput"
+                android:hint="@string/ph_max">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max" android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypePPMMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/ppm_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypePPMMaxInput"
+                style="@style/edit_text_right"
+                android:hint="@string/ppm_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max" android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypeLightMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/light_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypeLightMaxInput"
+                style="@style/edit_text_right"
+                android:hint="@string/light_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max" android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypeHumidityMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/humid_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypeHumidityMaxInput"
+                style="@style/edit_text_right"
+                android:hint="@string/humid_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/hor_layout_min_max" android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypeTempMinInput"
+                style="@style/edit_text_left"
+                android:hint="@string/temp_min">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addTypeTempMaxInput"
+                style="@style/edit_text_right"
+                android:hint="@string/temp_max">
+
+                <com.google.android.material.textfield.TextInputEditText style="@style/decimal_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/addTypeBtn"
+            style="@style/rounded_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/add_plant_type" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

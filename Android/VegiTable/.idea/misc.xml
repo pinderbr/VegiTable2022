@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/activity_main.xml" value="0.275" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/add_bucket.xml" value="0.25" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/device_list_item.xml" value="0.275" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_about.xml" value="0.275" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_create_account.xml" value="0.25" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_devices.xml" value="0.25" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_notification_settings.xml" value="0.275" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_view_profile.xml" value="0.25" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/notification_card.xml" value="0.33" />
+        <entry key="..\:/1)MyStuff/1)Sheridan/Semester6/Capstone/Code/VegiTable/Android/VegiTable/app/src/main/res/layout/update_bucket.xml" value="0.15390625" />
+        <entry key="..\:/Users/Bryce/Documents/VegiTable/Android/VegiTable/app/src/main/res/layout/activity_main.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/Bryce/Documents/VegiTable/Android/VegiTable/app/src/main/res/layout/bucket_card.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/drawable/vector_add.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/activity_main.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/add_bucket.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/archived_plant_list_card.xml" value="0.13020833333333334" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/bucket_card.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/bucket_dropdown.xml" value="0.43854166666666666" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_add_plant.xml" value="0.36" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_archive_plant.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_bucket_list.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_create_plant_type.xml" value="0.43854166666666666" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_update_plant.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_view_plant_list.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/plant_list_card.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/plant_type_dropdown.xml" value="0.5546875" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/textview_sensor_list_item.xml" value="0.43854166666666666" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/update_bucket.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/view_bucket_current.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/menu/bottom_nav_bar.xml" value="0.33125" />
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/xml/dropdown_test.xml" value="0.43854166666666666" />
+=======
+        <entry key="..\:/Users/marth/Desktop/Softsquad/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_add_plant.xml" value="0.13020833333333334" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/drawable/bottom_nav_colors.xml" value="0.5755208333333334" />
+>>>>>>> jason-working
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/activity_main.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/add_bucket.xml" value="0.5" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/archived_plant_list_card.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/bucket_card.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/bucket_item.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/bucket_list.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/device_list_item.xml" value="0.334375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_add_bucket.xml" value="0.3359375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_archive_plant.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_bucket_list.xml" value="0.334375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_devices.xml" value="0.3875" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_notification_log.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_view_bucket_data_current.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_view_plant_list.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/fragment_view_profile.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/notification_card.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/notification_log.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/plant_list_card.xml" value="0.334375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/textview_sensor_list_item.xml" value="0.3875" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/update_bucket.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/view_bucket.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/layout/view_bucket_current.xml" value="0.559375" />
+        <entry key="..\:/capstoneProject/VegiTable/Android/VegiTable/app/src/main/res/menu/bottom_nav_bar.xml" value="0.334375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

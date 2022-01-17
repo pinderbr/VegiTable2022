@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/vb_bucket_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bucket_name"
+        style="@style/bold_text"
+        />
+
+    <ImageView
+        android:id="@+id/vb_bucket_iv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/vb_bucket_name_tv"
+        android:src="@drawable/vector_grass" />
+    <TextView
+        android:id="@+id/vb_water_lbl"
+        android:layout_below="@+id/vb_bucket_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/water_level_lbl"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_ph_lbl"
+        android:layout_below="@+id/vb_water_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ph_lbl"
+        style="@style/basic_text_style"/>
+
+    <TextView
+        android:id="@+id/vb_ph_min"
+        android:layout_below="@+id/vb_ph_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.0"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_ph_max"
+        android:layout_below="@+id/vb_ph_lbl"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.5"
+        style="@style/basic_text_style"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/vb_ph_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vb_ph_lbl"
+        android:value="5.8"
+        android:valueFrom="5.0"
+        android:valueTo="6.5" />
+
+    <TextView
+        android:id="@+id/vb_ppm_lbl"
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vb_ph_slider"
+        android:text="@string/ppm_lbl" />
+
+    <TextView
+        android:id="@+id/vb_ppm_min"
+        android:layout_below="@+id/vb_ppm_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_ppm_max"
+        android:layout_below="@+id/vb_ppm_lbl"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        style="@style/basic_text_style"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/vb_ppm_slider"
+        android:layout_below="@+id/vb_ppm_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="200"
+        android:valueTo="1000"
+        android:value="800"
+        />
+
+    <TextView
+        android:id="@+id/vb_lumen_lbl"
+        android:layout_below="@+id/vb_ppm_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lumens_lbl"
+        style="@style/basic_text_style"/>
+
+    <TextView
+        android:id="@+id/vb_lumen_min"
+        android:layout_below="@+id/vb_lumen_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7000"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_lumen_max"
+        android:layout_below="@+id/vb_lumen_lbl"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7500"
+        style="@style/basic_text_style"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/vb_lumen_slider"
+        android:layout_below="@+id/vb_lumen_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="7000"
+        android:valueTo="7500"
+        android:value="7200"/>
+
+    <TextView
+        android:id="@+id/vb_humidity_lbl"
+        android:layout_below="@+id/vb_lumen_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/humidity_lbl"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_humidity_min"
+        android:layout_below="@+id/vb_humidity_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60%"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_humidity_max"
+        android:layout_below="@+id/vb_humidity_lbl"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65%"
+        style="@style/basic_text_style"
+        />
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/vb_humidity_slider"
+        android:layout_below="@+id/vb_humidity_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="60"
+        android:valueTo="65"
+        android:value="62"/>
+
+    <TextView
+        android:id="@+id/vb_temper_lbl"
+        android:layout_below="@+id/vb_humidity_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_lbl"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_temper_min"
+        android:layout_below="@+id/vb_temper_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20°C"
+        style="@style/basic_text_style"
+        />
+
+    <TextView
+        android:id="@+id/vb_temper_max"
+        android:layout_below="@+id/vb_temper_lbl"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22°C"
+        style="@style/basic_text_style"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/vb_temper_slider"
+        android:layout_below="@+id/vb_temper_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="20"
+        android:valueTo="22"
+        android:value="20.9"/>
+
+
+
+</RelativeLayout>

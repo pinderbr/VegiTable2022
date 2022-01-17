@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AC14C0A0-EFA0-4C70-99F1-55D7C34A3017"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B550F630-57ED-4D46-843A-37F1CAEF3B39"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VegiTable/ViewControllers/EditBucketVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "didReceiveData(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2540E5A-673F-425F-B6C2-3B6E24652F82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VegiTable/Models/DbModels/Buckets.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "updateBucket(newBucket:url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEDB52C8-6CD0-409C-B9A7-FF00FEBDF5EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VegiTable/Networking/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "response(request:completionBlock:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FEDB52C8-6CD0-409C-B9A7-FF00FEBDF5EE - 24d570ff86337bbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VegiTable.Network.response(request: Foundation.URLRequest, completionBlock: (Foundation.Data) -&gt; ()) -&gt; ()"
+                  moduleName = "VegiTable"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Student/3)Capstone/VegiTable/iOS/VegiTable/VegiTable/Networking/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "FEDB52C8-6CD0-409C-B9A7-FF00FEBDF5EE - 782d1cb6b98500e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VegiTable.Network.response(request: Foundation.URLRequest, completionBlock: (Foundation.Data) -&gt; ()) -&gt; ()"
+                  moduleName = "VegiTable"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Student/3)Capstone/VegiTable/iOS/VegiTable/VegiTable/Networking/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "354">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

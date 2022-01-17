@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/archivedPlantCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    style="@style/card_style_new"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/archivedPlantNameAndType"
+            style="@style/card_text_header"
+            android:text="@string/plant_name_and_type" />
+
+        <ImageView
+            android:id="@+id/archivedPlantImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@id/archivedPlantNameAndType"
+            android:layout_marginTop="@dimen/_15sdp"
+            tools:srcCompat="@drawable/vector_grass" />
+
+        <ImageView
+            android:id="@+id/archivedCopyPlantImage"
+            style="@style/card_icons"
+            app:srcCompat="@drawable/vector_copy" />
+
+        <TextView
+            android:id="@+id/archiveDate_lbl"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/archivedPlantNameAndType"
+            android:layout_toEndOf="@id/archivedPlantImage"
+            android:text="@string/archive_date" />
+        <TextView
+            android:id="@+id/archiveDate"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/archivedPlantNameAndType"
+            android:layout_toEndOf="@id/archiveDate_lbl"
+            android:text="yyyy-mm-dd hh:mm:ss" />
+
+        <TextView
+            android:id="@+id/archivedPlantPH_lbl"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/archiveDate"
+            android:layout_toEndOf="@id/archivedPlantImage"
+            android:text="@string/ph_value" />
+
+            <TextView
+                android:id="@+id/archivedPlantPH"
+                style="@style/card_text_list_items"
+                android:layout_below="@id/archiveDate"
+                android:layout_toEndOf="@id/archivedPlantPH_lbl"
+                android:text="min-max" />
+
+        <TextView
+            android:id="@+id/archivedPlantPPM_lbl"
+            style="@style/card_text_list_items"
+            android:text="@string/ppm_value"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/archivedPlantImage"
+            android:layout_below="@id/archivedPlantPH_lbl" />
+
+            <TextView
+                android:id="@+id/archivedPlantPPM"
+                style="@style/card_text_list_items"
+                android:text="min-max"
+                android:textSize="14sp"
+                android:layout_toEndOf="@id/archivedPlantPPM_lbl"
+                android:layout_below="@id/archivedPlantPH_lbl" />
+
+        <TextView
+            android:id="@+id/archivedPlantTemp_lbl"
+            style="@style/card_text_list_items"
+            android:text="@string/temp_value"
+            android:layout_toEndOf="@id/archivedPlantImage"
+            android:layout_below="@id/archivedPlantPPM_lbl" />
+
+            `<TextView
+                android:id="@+id/archivedPlantTemp"
+                style="@style/card_text_list_items"
+                android:text="min-max"
+                android:layout_toEndOf="@id/archivedPlantTemp_lbl"
+                android:layout_below="@id/archivedPlantPPM_lbl" />  `
+
+        <TextView
+            android:id="@+id/archivedPlantLight_lbl"
+            style="@style/card_text_list_items"
+            android:text="@string/light_value"
+            android:layout_toEndOf="@id/archivedPlantImage"
+            android:layout_below="@id/archivedPlantTemp_lbl" />
+
+            <TextView
+                android:id="@+id/archivedPlantLight"
+                style="@style/card_text_list_items"
+                android:text="min-max"
+                android:layout_toEndOf="@id/archivedPlantLight_lbl"
+                android:layout_below="@id/archivedPlantTemp_lbl" />
+
+        <TextView
+            android:id="@+id/archivedPlantHumidity_lbl"
+            style="@style/card_text_list_items"
+            android:layout_below="@id/archivedPlantLight_lbl"
+            android:layout_toEndOf="@id/archivedPlantImage"
+            android:text="@string/humid_value" />
+
+            <TextView
+                android:id="@+id/archivedPlantHumidity"
+                style="@style/card_text_list_items"
+                android:layout_below="@id/archivedPlantLight_lbl"
+                android:layout_toEndOf="@id/archivedPlantHumidity_lbl"
+                android:text="min-max" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

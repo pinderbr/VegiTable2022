@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">VegiTable</string>
+    <string name="add_bucket">Add Bucket</string>
+    <string name="bucket_name">Bucket Name</string>
+    <string name="add_bucket_link_sensor_label">Link to Sensor</string>
+    <string name="add_image">Add Image</string>
+    <string name="sensor_id">Sensor ID: </string>
+    <string name="update_bucket">Update Bucket</string>
+    <string name="bucket_id">Bucket Id</string>
+    <string name="ph">pH: </string>
+    <string name="ppm">PPM: </string>
+    <string name="light">Light: </string>
+    <string name="humidity">Humidity: </string>
+    <string name="temperature">Temperature: </string>
+    <string name="water_level">Water Level: </string>
+    <string name="lumens">Lumens: </string>
+
+    <!-- Form field text/hint texts -->
+    <string name="plant_nickname">Plant Nickname</string>
+    <string name="select_bucket">Select Bucket</string>
+    <string name="select_plant_type">Select Plant Type</string>
+    <string name="select_device">Select Device</string>
+    <string name="ph_min">ph Min</string>
+    <string name="ph_max">ph Max</string>
+    <string name="ppm_min">PPM Min</string>
+    <string name="ppm_max">PPM Max</string>
+    <string name="light_min">Light Min</string>
+    <string name="light_max">Light Max</string>
+    <string name="humid_min">Humidity Min</string>
+    <string name="humid_max">Humidity Max</string>
+    <string name="temp_min">Temperature Min</string>
+    <string name="temp_max">Temperature Max</string>
+    <string name="plant_phase">Plant Phase</string>
+    <string name="img_name">Image</string>
+    <string name="plant_type_name">Plant Type Name</string>
+
+    <!-- Form field validation messages-->
+    <string name="value_required">Please enter a value!</string>
+    <string name="name_required">Please enter a name!</string>
+    <string name="bucket_required">Please select a bucket!</string>
+    <string name="device_required">Please select a device!</string>
+
+    <!-- temp dropdown items -->
+    <string-array name="bucket_list">
+        <item>Bucket 1</item>
+        <item>Bucket 2</item>
+        <item>Bucket 3</item>
+        <item>Bucket 4</item>
+    </string-array>
+
+    <string-array name="plant_type_items">
+        <item>Tomato</item>
+        <item>Cannabis</item>
+        <item>Iceberg Lettuce</item>
+    </string-array>
+
+
+    <!-- text views -->
+    <string name="copy_to">Copy Plant To:</string>
+    <string name="confirm_archive">Are you sure you want to archive this plant?</string>
+    <string name="plant_name_and_type">Plant Name - Plant Type</string>
+    <string name="ph_value">pH:</string>
+    <string name="ppm_value">PPM:</string>
+    <string name="light_value">Light:</string>
+    <string name="humid_value">Humidity:</string>
+    <string name="temp_value">Temperature:</string>
+    <string name="water_value">Water:</string>
+    <string name="archive_date">Archive Date:</string>
+
+    <string name="ph_lbl">pH: </string>
+    <string name="ppm_lbl">PPM: </string>
+    <string name="light_lbl">Light: </string>
+    <string name="humidity_lbl">Humidity: </string>
+    <string name="temperature_lbl">Temperature: </string>
+    <string name="water_level_lbl">Water Level: </string>
+    <string name="lumens_lbl">Lumens: </string>
+
+    <!-- notification log -->
+    <string name="nl_bucket_lbl">Bucket ID: </string>
+    <string name="nl_time_lbl">Time: </string>
+    <string name="nl_message_lbl">Message: </string>
+
+    <string name="nl_bucket_id">Bucket ID </string>
+    <string name="nl_time_tv">Time</string>
+    <string name="nl_message_tv">Message</string>
+
+    <!-- buttons -->
+    <string name="add_type">Add Type</string>
+    <string name="add_img">Add Image</string>
+    <string name="add_plant_type">Add Plant Type</string>
+    <string name="add_plant">Add Plant</string>
+    <string name="update_plant">Update Plant</string>
+    <string name="cancel">Cancel</string>
+    <string name="copy">Copy</string>
+    <string name="archive">Archive</string>
+    <string name="view_data">View Data</string>
+    <string name="email_input">Email</string>
+    <string name="password_input">Password</string>
+    <string name="remember_me_checkbox">Remember Me</string>
+    <string name="login_btn">Login</string>
+    <string name="create_account_btn">Create Account</string>
+    <string name="forgot_password_btn">Forgot Password?</string>
+    <string name="name_btn">Name</string>
+    <string name="confirm_password_input">Confirm Password</string>
+    <string name="name_input">Name</string>
+    <string name="update_profile_btn">Update</string>
+    <string name="pair_new_device_btn">Pair New Device</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed venenatis nunc.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greenhouse">Greenhouse</string>
+    <string name="sensor">Sensor</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+
+    <string name="daily_notifications">Daily Notifications</string>
+    <string name="select_time">Select Time</string>
+    <string name="alert_notifications">Alert Notifications</string>
+    <string name="sensor_status_notifications">Sensor Status Notifications</string>
+    <string name="daily_notification_about">The Daily Notifications are sent out once a day at the time you specify below. It will provide the most current readings taken from the sensors in each of your buckets</string>
+    <string name="alert_notification_about">The Alert Notifications are sent out when a reading taken from a sensor is out of the specified range for the plants in the corresponding bucket.</string>
+    <string name="sensor_status_notifications_about">The Sensor Status Notifications are sent out when there is an issue with one of the sensors. Ex. the sensor is not sending out readings.</string>
+    <string name="pair_btn">Pair</string>
+    <string name="device_serial_number">Device Serial Number</string>
+    <string name="pairing_new_device">Pairing New Device</string>
+    <string name="edit_graph">Edit Graph</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="select_date_range">Date range:</string>
+    <string name="select_sensor_data_to_show">Select sensor data to show:</string>
+    <string name="sensor_type">Sensor type</string>
+    <string-array name="sensor_list">
+        <item>PPM</item>
+        <item>pH</item>
+        <item>Temperature</item>
+        <item>Humidity</item>
+        <item>Light</item>
+    </string-array>
+    <string name="edit_range_btn">Edit Range</string>
+    <string name="edit_device_name">Edit Device Name:</string>
+    <string name="device_name">Device Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="ph_info">The ph inside your bucket can affect the way your plant takes in nutrients and water.
+        Each plant is different but typically has a range between 4-9. Take time to look up what is a good
+        range for your plants and aim to keep the water within that range by adding either PH+ or PH-.</string>
+    <string name="ppm_info">PPM/TDS is a measure of the parts per million/total dissolved solids within your bucket.
+        Ideally you should keep a note of what the water in your home naturally has so you can adjust your nutrients as needed.
+        Take a look online for a mixture of nutrient solutions and suggested amounts per litre/gallon of water and add it to your water.
+        Compare against your tap water levels so you have a baseline and a full nutrient solution level.
+        As your plant absorbs water it will absorb nutrients as well, the ph and ppm will change and as needed you may need to top up as time goes on.</string>
+    <string name="water_level_info">Keep an eye on your water level as your plant may drink water faster than you expect!</string>
+    <string name="humidity_info">Humidity is the amount of moisture in your air. This can affect how plants will absorb light and nutrients from the water.
+        If it’s too moist you can run into issues with fungal growth and other issues, with too dry your plants may drink more water while leaving some more of
+        the nutrients. To dry it out add some fans or a dehumidifier, and to moisten the room without changing the temperature use a cool mist humidifier.</string>
+
+    <string name="about_app">About</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+
+
+</resources>

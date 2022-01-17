@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bucketListFragment">
+
+    <fragment
+        android:id="@+id/bucketListFragment"
+        android:name="project.softsquad.vegitable.ui.bucket.BucketListFragment"
+        android:label="fragment_bucket_list"
+        tools:layout="@layout/fragment_bucket_list" >
+        <action
+            android:id="@+id/action_bucketListFragment_to_addBucketFragment"
+            app:destination="@id/addBucketFragment" />
+        <action
+            android:id="@+id/action_bucketListFragment_to_updateBucketFragment"
+            app:destination="@id/updateBucketFragment" />
+        <action
+            android:id="@+id/action_bucketListFragment_to_viewPlantListFragment"
+            app:destination="@id/viewPlantListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/archivePlantFragment"
+        android:name="project.softsquad.vegitable.ui.plant.ArchivePlantFragment"
+        android:label="ArchivePlantFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="project.softsquad.vegitable.ui.NotificationFragment"
+        android:label="fragment_notification_log"
+        tools:layout="@layout/fragment_notification_log" />
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="project.softsquad.vegitable.ui.profile.ViewProfileFragment"
+        android:label="ViewProfileFragment" >
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBucketFragment"
+        android:name="project.softsquad.vegitable.ui.bucket.AddBucketFragment"
+        android:label="fragment_add_bucket"
+        tools:layout="@layout/fragment_add_bucket" >
+        <action
+            android:id="@+id/action_addBucketFragment_to_bucketListFragment"
+            app:destination="@id/bucketListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlantFragment"
+        android:name="project.softsquad.vegitable.ui.plant.AddPlantFragment"
+        android:label="AddPlantFragment" >
+        <action
+            android:id="@+id/action_addPlantFragment_to_createPlantTypeFragment"
+            app:destination="@id/createPlantTypeFragment" />
+        <action
+            android:id="@+id/action_addPlantFragment_to_viewPlantListFragment"
+            app:destination="@id/viewPlantListFragment" />
+        <argument
+            android:name="bucket_id"
+            app:argType="long" />
+        <argument
+            android:name="user_id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPlantTypeFragment"
+        android:name="project.softsquad.vegitable.ui.planttype.CreatePlantTypeFragment"
+        android:label="fragment_create_plant_type"
+        tools:layout="@layout/fragment_create_plant_type" >
+        <action
+            android:id="@+id/action_createPlantTypeFragment_to_addPlantFragment"
+            app:destination="@id/addPlantFragment" />
+        <argument
+            android:name="user_id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPlantListFragment"
+        android:name="project.softsquad.vegitable.ui.plant.ViewPlantListFragment"
+        android:label="ViewPlantListFragment" >
+        <action
+            android:id="@+id/action_viewPlantListFragment_to_addPlantFragment"
+            app:destination="@id/addPlantFragment" />
+        <action
+            android:id="@+id/action_viewPlantListFragment_to_updatePlantFragment"
+            app:destination="@id/updatePlantFragment" />
+        <action
+            android:id="@+id/action_viewPlantListFragment_to_viewBucketDataCurrentFragment"
+            app:destination="@id/viewBucketDataCurrentFragment" />
+        <argument
+            android:name="bucket_id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_viewPlantListFragment_to_bucketDataFragment"
+            app:destination="@id/bucketDataFragment" />
+        <argument
+            android:name="user_id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePlantFragment"
+        android:name="project.softsquad.vegitable.ui.plant.UpdatePlantFragment"
+        android:label="UpdatePlantFragment" >
+        <action
+            android:id="@+id/action_updatePlantFragment_to_viewPlantListFragment"
+            app:destination="@id/viewPlantListFragment" />
+        <action
+            android:id="@+id/action_updatePlantFragment_to_createPlantTypeFragment"
+            app:destination="@id/createPlantTypeFragment" />
+        <argument
+            android:name="plant_id"
+            app:argType="long" />
+        <argument
+            android:name="bucket_id"
+            app:argType="long" />
+        <argument
+            android:name="user_id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateBucketFragment"
+        android:name="project.softsquad.vegitable.ui.bucket.UpdateBucketFragment"
+        android:label="UpdateBucketFragment" >
+        <action
+            android:id="@+id/action_updateBucketFragment_to_bucketListFragment"
+            app:destination="@id/bucketListFragment" />
+        <argument
+            android:name="bucket_id"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="project.softsquad.vegitable.ui.AboutFragment"
+        android:label="AboutFragment"/>
+    <action
+        android:id="@+id/action_menu_to_aboutFragment"
+        app:destination="@id/aboutFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="project.softsquad.vegitable.ui.profile.LoginActivity"
+        android:label="LoginFragment" />
+    <action
+        android:id="@+id/action_to_logIn"
+        app:destination="@id/loginFragment" />
+    <fragment
+        android:id="@+id/notificationSettingsFragment"
+        android:name="project.softsquad.vegitable.ui.NotificationSettingsFragment"
+        android:label="NotificationSettingsFragment" />
+    <action
+        android:id="@+id/action_to_notification_settings_fragment"
+        app:destination="@id/notificationSettingsFragment"
+        app:popUpTo="@id/bucketListFragment"
+        app:popUpToInclusive="true"/>
+
+    <fragment  
+        android:id="@+id/viewBucketDataCurrentFragment"
+        android:name="project.softsquad.vegitable.ui.bucket.ViewBucketDataCurrentFragment"
+        android:label="ViewBucketDataCurrentFragment" />
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="project.softsquad.vegitable.ui.DevicesFragment"
+        android:label="DevicesFragment" />
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="project.softsquad.vegitable.ui.profile.CreateAccountActivity"
+        android:label="CreateAccountFragment" />
+    <fragment
+        android:id="@+id/bucketDataFragment"
+        android:name="project.softsquad.vegitable.ui.BucketDataFragment"
+        android:label="fragment_bucket_data"
+        tools:layout="@layout/fragment_bucket_data" >
+        <argument
+            android:name="bucket_id"
+            app:argType="long" />
+    </fragment>
+</navigation>

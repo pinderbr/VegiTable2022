@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vegi_black">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/dailyNotification_switch"
+        style="@style/basic_text_style"
+        app:track="@drawable/custom_switch_track"
+        android:thumb="@drawable/custom_switch_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/daily_notifications"
+        android:textSize="20sp"
+        android:checked="true"/>
+
+    <TextView
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_notification_about" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/selectedTime_text"
+            style="@style/basic_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="8:00 PM"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/selectTime_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/select_time" />
+
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/alertNotification_switch"
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/alert_notifications"
+        android:textSize="20sp"
+        android:thumb="@drawable/custom_switch_thumb"
+        app:track="@drawable/custom_switch_track"
+        android:checked="false"/>
+
+    <TextView
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_notification_about" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/sensorNotifications_switch"
+        style="@style/basic_text_style"
+        app:track="@drawable/custom_switch_track"
+        android:thumb="@drawable/custom_switch_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/sensor_status_notifications"
+        android:textSize="20sp"
+        android:checked="false"/>
+
+    <TextView
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_status_notifications_about" />
+</LinearLayout>
+</ScrollView>

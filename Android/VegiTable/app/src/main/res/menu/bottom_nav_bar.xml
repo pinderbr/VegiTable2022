@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bucketListFragment"
+        android:title="@string/greenhouse"
+        android:icon="@drawable/greenhouse_icon"/>
+    <item
+        android:id="@+id/archivePlantFragment"
+        android:title="@string/archive"
+        android:icon="@drawable/archive_icon"/>
+    <item
+        android:id="@+id/notificationFragment"
+        android:title="@string/notifications"
+        android:icon="@drawable/notification_icon"/>
+    <item
+        android:id="@+id/devicesFragment"
+        android:title="@string/sensor"
+        android:icon="@drawable/sensor_icon"/>
+    <item
+        android:id="@+id/viewProfileFragment"
+        android:title="@string/profile"
+        android:icon="@drawable/profile_icon"/>
+</menu>

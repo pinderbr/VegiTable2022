@@ -1,0 +1,6 @@
+framework module Pods_VegiTable {
+  umbrella header "Pods-VegiTable-umbrella.h"
+
+  export *
+  module * { export * }
+}

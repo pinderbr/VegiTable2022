@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vegi_black">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/vegi_black"
+    android:orientation="vertical"
+    tools:context=".ui.bucket.ViewBucketDataHistoricalFragment">
+
+    <TextView
+        android:id="@+id/bucket_sensor_name"
+        style="@style/basic_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:text="Bucket Name - PPM"
+        android:textAlignment="viewStart"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/date_range_text"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="yyyy-MM-dd to yyyy-MM-dd"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/edit_date_range_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="#757575"
+            android:labelFor="@id/userProfilePic_img"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            app:srcCompat="@drawable/ic_edit" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sensor_to_show"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <AutoCompleteTextView
+            android:id="@+id/sensor_to_show_auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Choose sensor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFFFFF" />
+
+</LinearLayout>
+</ScrollView>

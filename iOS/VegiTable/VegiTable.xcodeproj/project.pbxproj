@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0F5A1BB7B467BDEC53C7F4 /* Pods_VegiTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9775FF0D3BF9163D8D81A5A7 /* Pods_VegiTable.framework */; };
+		0F5799B61741F9084ABBC152 /* Pods_VegiTableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE45AF30D1D8F7E4698DDEA /* Pods_VegiTableTests.framework */; };
+		12A45FDB5C21AC975CD91FE3 /* Pods_VegiTable_VegiTableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD82EA1D8D97B673D91ACF0 /* Pods_VegiTable_VegiTableUITests.framework */; };
+		404EF13A2615168B0037AC91 /* ArchivedPlantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404EF1392615168B0037AC91 /* ArchivedPlantsCollectionViewCell.swift */; };
+		406BD370260AC67D00CB8798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD36F260AC67D00CB8798 /* AppDelegate.swift */; };
+		406BD372260AC67D00CB8798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD371260AC67D00CB8798 /* SceneDelegate.swift */; };
+		406BD377260AC67D00CB8798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406BD375260AC67D00CB8798 /* Main.storyboard */; };
+		406BD37A260AC67D00CB8798 /* VegiTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 406BD378260AC67D00CB8798 /* VegiTable.xcdatamodeld */; };
+		406BD37C260AC67F00CB8798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406BD37B260AC67F00CB8798 /* Assets.xcassets */; };
+		406BD37F260AC67F00CB8798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406BD37D260AC67F00CB8798 /* LaunchScreen.storyboard */; };
+		406BD38A260AC67F00CB8798 /* VegiTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD389260AC67F00CB8798 /* VegiTableTests.swift */; };
+		406BD395260AC67F00CB8798 /* VegiTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD394260AC67F00CB8798 /* VegiTableUITests.swift */; };
+		406BD3AD260ACEAC00CB8798 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD3AC260ACEAC00CB8798 /* LoginVC.swift */; };
+		406BD3C7260BD5F700CB8798 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD3C6260BD5F700CB8798 /* CreateAccountVC.swift */; };
+		406BD424260C005D00CB8798 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD423260C005D00CB8798 /* HomeVC.swift */; };
+		406BD43B260CD34A00CB8798 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD43A260CD34A00CB8798 /* MenuItem.swift */; };
+		406BD463260FC12D00CB8798 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD462260FC12D00CB8798 /* SideMenuController.swift */; };
+		406BD468260FC17A00CB8798 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD467260FC17A00CB8798 /* ProfileVC.swift */; };
+		406BD46D260FC1D200CB8798 /* GreenhouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD46C260FC1D200CB8798 /* GreenhouseVC.swift */; };
+		406BD47A260FD05200CB8798 /* ArchivedPlantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD479260FD05200CB8798 /* ArchivedPlantsVC.swift */; };
+		406BD47F260FD07100CB8798 /* SensorManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD47E260FD07100CB8798 /* SensorManagementVC.swift */; };
+		406BD489260FD0AB00CB8798 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD488260FD0AB00CB8798 /* AboutVC.swift */; };
+		406BD4912610042F00CB8798 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BD4902610042F00CB8798 /* ContainerVC.swift */; };
+		406DD8C8261E847200FFCBE1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8C7261E847200FFCBE1 /* Network.swift */; };
+		406DD8CD261E848900FFCBE1 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8CC261E848900FFCBE1 /* Notification.swift */; };
+		406DD8D2261E849400FFCBE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8D1261E849400FFCBE1 /* User.swift */; };
+		406DD8D7261E84A200FFCBE1 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8D6261E84A200FFCBE1 /* Device.swift */; };
+		406DD8DC261E84B000FFCBE1 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8DB261E84B000FFCBE1 /* Bucket.swift */; };
+		406DD8E1261E84BF00FFCBE1 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8E0261E84BF00FFCBE1 /* Plant.swift */; };
+		406DD8E6261E84DF00FFCBE1 /* DeviceReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DD8E5261E84DF00FFCBE1 /* DeviceReading.swift */; };
+		40942101261AAC1B00AE1270 /* PairSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409420FF261AAC1A00AE1270 /* PairSensorView.swift */; };
+		40942102261AAC1B00AE1270 /* PairSensorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40942100261AAC1B00AE1270 /* PairSensorView.xib */; };
+		40942107261AB27C00AE1270 /* ViewBucketDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40942106261AB27C00AE1270 /* ViewBucketDataVC.swift */; };
+		4094210C261ABBAC00AE1270 /* EditPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094210B261ABBAC00AE1270 /* EditPlantVC.swift */; };
+		40A58B5C26195F490045B32E /* AddPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A58B5B26195F490045B32E /* AddPlantVC.swift */; };
+		40A58B642619608E0045B32E /* CustomDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A58B632619608E0045B32E /* CustomDelegate.swift */; };
+		40BFB0062615A68D005FE5EE /* AboutSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BFB0052615A68D005FE5EE /* AboutSection.swift */; };
+		6B41BDB32617EC9E00C46B79 /* AddPlantTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41BDB22617EC9E00C46B79 /* AddPlantTypeVC.swift */; };
+		6B41BDB8261807FE00C46B79 /* InputFieldAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41BDB7261807FE00C46B79 /* InputFieldAssembly.swift */; };
+		6B4AF2942617AE3A001619D0 /* AddBucketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AF2932617AE3A001619D0 /* AddBucketVC.swift */; };
+		6B4AF29F2617E351001619D0 /* EditBucketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AF29E2617E351001619D0 /* EditBucketVC.swift */; };
+		6BFF86BF2619277600AFDEA7 /* SensorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF86BE2619277600AFDEA7 /* SensorCollectionViewCell.swift */; };
+		D98AE5252618AFEC000F857F /* BucketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98AE5242618AFEC000F857F /* BucketCollectionViewCell.swift */; };
+		D98AE5322618B0E1000F857F /* ViewBucketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98AE5312618B0E1000F857F /* ViewBucketVC.swift */; };
+		D9B090362619E3380042CC01 /* ViewPlantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B090352619E3380042CC01 /* ViewPlantVC.swift */; };
+		D9D6958F2612994D0035BAC7 /* GreenhouseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6958E2612994D0035BAC7 /* GreenhouseCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		406BD386260AC67F00CB8798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BD364260AC67D00CB8798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 406BD36B260AC67D00CB8798;
+			remoteInfo = VegiTable;
+		};
+		406BD391260AC67F00CB8798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406BD364260AC67D00CB8798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 406BD36B260AC67D00CB8798;
+			remoteInfo = VegiTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A6A29208E2ECD9232A8152E /* Pods-VegiTableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegiTableTests.release.xcconfig"; path = "Target Support Files/Pods-VegiTableTests/Pods-VegiTableTests.release.xcconfig"; sourceTree = "<group>"; };
+		404EF1392615168B0037AC91 /* ArchivedPlantsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedPlantsCollectionViewCell.swift; sourceTree = "<group>"; };
+		406BD36C260AC67D00CB8798 /* VegiTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegiTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		406BD36F260AC67D00CB8798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		406BD371260AC67D00CB8798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		406BD376260AC67D00CB8798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		406BD379260AC67D00CB8798 /* VegiTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VegiTable.xcdatamodel; sourceTree = "<group>"; };
+		406BD37B260AC67F00CB8798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		406BD37E260AC67F00CB8798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		406BD380260AC67F00CB8798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406BD385260AC67F00CB8798 /* VegiTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegiTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		406BD389260AC67F00CB8798 /* VegiTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegiTableTests.swift; sourceTree = "<group>"; };
+		406BD38B260AC67F00CB8798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406BD390260AC67F00CB8798 /* VegiTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegiTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		406BD394260AC67F00CB8798 /* VegiTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegiTableUITests.swift; sourceTree = "<group>"; };
+		406BD396260AC67F00CB8798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406BD3A6260ACAF300CB8798 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		406BD3AC260ACEAC00CB8798 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		406BD3C6260BD5F700CB8798 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		406BD423260C005D00CB8798 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		406BD43A260CD34A00CB8798 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		406BD462260FC12D00CB8798 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
+		406BD467260FC17A00CB8798 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		406BD46C260FC1D200CB8798 /* GreenhouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenhouseVC.swift; sourceTree = "<group>"; };
+		406BD479260FD05200CB8798 /* ArchivedPlantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedPlantsVC.swift; sourceTree = "<group>"; };
+		406BD47E260FD07100CB8798 /* SensorManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManagementVC.swift; sourceTree = "<group>"; };
+		406BD488260FD0AB00CB8798 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		406BD4902610042F00CB8798 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		406DD8C7261E847200FFCBE1 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		406DD8CC261E848900FFCBE1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		406DD8D1261E849400FFCBE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		406DD8D6261E84A200FFCBE1 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		406DD8DB261E84B000FFCBE1 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		406DD8E0261E84BF00FFCBE1 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		406DD8E5261E84DF00FFCBE1 /* DeviceReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReading.swift; sourceTree = "<group>"; };
+		409420FF261AAC1A00AE1270 /* PairSensorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSensorView.swift; sourceTree = "<group>"; };
+		40942100261AAC1B00AE1270 /* PairSensorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PairSensorView.xib; sourceTree = "<group>"; };
+		40942106261AB27C00AE1270 /* ViewBucketDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBucketDataVC.swift; sourceTree = "<group>"; };
+		4094210B261ABBAC00AE1270 /* EditPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantVC.swift; sourceTree = "<group>"; };
+		40A58B5B26195F490045B32E /* AddPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantVC.swift; sourceTree = "<group>"; };
+		40A58B632619608E0045B32E /* CustomDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDelegate.swift; sourceTree = "<group>"; };
+		40BFB0052615A68D005FE5EE /* AboutSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection.swift; sourceTree = "<group>"; };
+		5BA291E0596CA7745E157036 /* Pods-VegiTableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegiTableTests.debug.xcconfig"; path = "Target Support Files/Pods-VegiTableTests/Pods-VegiTableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B41BDB22617EC9E00C46B79 /* AddPlantTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantTypeVC.swift; sourceTree = "<group>"; };
+		6B41BDB7261807FE00C46B79 /* InputFieldAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldAssembly.swift; sourceTree = "<group>"; };
+		6B4AF2932617AE3A001619D0 /* AddBucketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketVC.swift; sourceTree = "<group>"; };
+		6B4AF29E2617E351001619D0 /* EditBucketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBucketVC.swift; sourceTree = "<group>"; };
+		6BFF86BE2619277600AFDEA7 /* SensorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B71A4C7D296F2B08C4267BB /* Pods-VegiTable-VegiTableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegiTable-VegiTableUITests.debug.xcconfig"; path = "Target Support Files/Pods-VegiTable-VegiTableUITests/Pods-VegiTable-VegiTableUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AD82EA1D8D97B673D91ACF0 /* Pods_VegiTable_VegiTableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegiTable_VegiTableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9775FF0D3BF9163D8D81A5A7 /* Pods_VegiTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegiTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB7E538887E1A4DDBDE5011 /* Pods-VegiTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegiTable.release.xcconfig"; path = "Target Support Files/Pods-VegiTable/Pods-VegiTable.release.xcconfig"; sourceTree = "<group>"; };
+		A0CF55C0EB46FD26842F96EF /* Pods-VegiTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegiTable.debug.xcconfig"; path = "Target Support Files/Pods-VegiTable/Pods-VegiTable.debug.xcconfig"; sourceTree = "<group>"; };
+		AF84DC9320AE9CBCC90A7861 /* Pods-VegiTable-VegiTableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegiTable-VegiTableUITests.release.xcconfig"; path = "Target Support Files/Pods-VegiTable-VegiTableUITests/Pods-VegiTable-VegiTableUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D98AE5242618AFEC000F857F /* BucketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketCollectionViewCell.swift; sourceTree = "<group>"; };
+		D98AE5312618B0E1000F857F /* ViewBucketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBucketVC.swift; sourceTree = "<group>"; };
+		D9B090352619E3380042CC01 /* ViewPlantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPlantVC.swift; sourceTree = "<group>"; };
+		D9D6958E2612994D0035BAC7 /* GreenhouseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenhouseCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFE45AF30D1D8F7E4698DDEA /* Pods_VegiTableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegiTableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		406BD369260AC67D00CB8798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0F5A1BB7B467BDEC53C7F4 /* Pods_VegiTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406BD382260AC67F00CB8798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5799B61741F9084ABBC152 /* Pods_VegiTableTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406BD38D260AC67F00CB8798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A45FDB5C21AC975CD91FE3 /* Pods_VegiTable_VegiTableUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		406BD363260AC67D00CB8798 = {
+			isa = PBXGroup;
+			children = (
+				406BD36E260AC67D00CB8798 /* VegiTable */,
+				406BD388260AC67F00CB8798 /* VegiTableTests */,
+				406BD393260AC67F00CB8798 /* VegiTableUITests */,
+				406BD36D260AC67D00CB8798 /* Products */,
+				E41CB4077B26E06E55530635 /* Pods */,
+				47AB7E3F9D269879754EEAA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		406BD36D260AC67D00CB8798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				406BD36C260AC67D00CB8798 /* VegiTable.app */,
+				406BD385260AC67F00CB8798 /* VegiTableTests.xctest */,
+				406BD390260AC67F00CB8798 /* VegiTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		406BD36E260AC67D00CB8798 /* VegiTable */ = {
+			isa = PBXGroup;
+			children = (
+				406DD8C3261E834700FFCBE1 /* Networking */,
+				D9D6958A261299190035BAC7 /* View */,
+				406BD3AB260ACE9200CB8798 /* ViewControllers */,
+				406BD3A7260ACAF900CB8798 /* Fonts */,
+				406BD430260CD29000CB8798 /* Models */,
+				406BD36F260AC67D00CB8798 /* AppDelegate.swift */,
+				406BD371260AC67D00CB8798 /* SceneDelegate.swift */,
+				406BD375260AC67D00CB8798 /* Main.storyboard */,
+				406BD37B260AC67F00CB8798 /* Assets.xcassets */,
+				406BD37D260AC67F00CB8798 /* LaunchScreen.storyboard */,
+				406BD380260AC67F00CB8798 /* Info.plist */,
+				406BD378260AC67D00CB8798 /* VegiTable.xcdatamodeld */,
+			);
+			path = VegiTable;
+			sourceTree = "<group>";
+		};
+		406BD388260AC67F00CB8798 /* VegiTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				406BD389260AC67F00CB8798 /* VegiTableTests.swift */,
+				406BD38B260AC67F00CB8798 /* Info.plist */,
+			);
+			path = VegiTableTests;
+			sourceTree = "<group>";
+		};
+		406BD393260AC67F00CB8798 /* VegiTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				406BD394260AC67F00CB8798 /* VegiTableUITests.swift */,
+				406BD396260AC67F00CB8798 /* Info.plist */,
+			);
+			path = VegiTableUITests;
+			sourceTree = "<group>";
+		};
+		406BD3A7260ACAF900CB8798 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				406BD3A6260ACAF300CB8798 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		406BD3AB260ACE9200CB8798 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				406BD488260FD0AB00CB8798 /* AboutVC.swift */,
+				6B4AF2932617AE3A001619D0 /* AddBucketVC.swift */,
+				40A58B5B26195F490045B32E /* AddPlantVC.swift */,
+				6B41BDB22617EC9E00C46B79 /* AddPlantTypeVC.swift */,
+				406BD479260FD05200CB8798 /* ArchivedPlantsVC.swift */,
+				406BD3C6260BD5F700CB8798 /* CreateAccountVC.swift */,
+				406BD4902610042F00CB8798 /* ContainerVC.swift */,
+				6B4AF29E2617E351001619D0 /* EditBucketVC.swift */,
+				4094210B261ABBAC00AE1270 /* EditPlantVC.swift */,
+				406BD46C260FC1D200CB8798 /* GreenhouseVC.swift */,
+				406BD423260C005D00CB8798 /* HomeVC.swift */,
+				406BD3AC260ACEAC00CB8798 /* LoginVC.swift */,
+				406BD467260FC17A00CB8798 /* ProfileVC.swift */,
+				406BD47E260FD07100CB8798 /* SensorManagementVC.swift */,
+				406BD462260FC12D00CB8798 /* SideMenuController.swift */,
+				D98AE5312618B0E1000F857F /* ViewBucketVC.swift */,
+				40942106261AB27C00AE1270 /* ViewBucketDataVC.swift */,
+				D9B090352619E3380042CC01 /* ViewPlantVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		406BD430260CD29000CB8798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				406DD8C6261E844E00FFCBE1 /* DbModels */,
+				406BD43A260CD34A00CB8798 /* MenuItem.swift */,
+				40BFB0052615A68D005FE5EE /* AboutSection.swift */,
+				6B41BDB7261807FE00C46B79 /* InputFieldAssembly.swift */,
+				40A58B632619608E0045B32E /* CustomDelegate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		406DD8C3261E834700FFCBE1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				406DD8C7261E847200FFCBE1 /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		406DD8C6261E844E00FFCBE1 /* DbModels */ = {
+			isa = PBXGroup;
+			children = (
+				406DD8DB261E84B000FFCBE1 /* Bucket.swift */,
+				406DD8D6261E84A200FFCBE1 /* Device.swift */,
+				406DD8E5261E84DF00FFCBE1 /* DeviceReading.swift */,
+				406DD8CC261E848900FFCBE1 /* Notification.swift */,
+				406DD8E0261E84BF00FFCBE1 /* Plant.swift */,
+				406DD8D1261E849400FFCBE1 /* User.swift */,
+			);
+			path = DbModels;
+			sourceTree = "<group>";
+		};
+		47AB7E3F9D269879754EEAA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9775FF0D3BF9163D8D81A5A7 /* Pods_VegiTable.framework */,
+				8AD82EA1D8D97B673D91ACF0 /* Pods_VegiTable_VegiTableUITests.framework */,
+				DFE45AF30D1D8F7E4698DDEA /* Pods_VegiTableTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9D6958A261299190035BAC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				409420FF261AAC1A00AE1270 /* PairSensorView.swift */,
+				40942100261AAC1B00AE1270 /* PairSensorView.xib */,
+				D9D6958E2612994D0035BAC7 /* GreenhouseCollectionViewCell.swift */,
+				404EF1392615168B0037AC91 /* ArchivedPlantsCollectionViewCell.swift */,
+				D98AE5242618AFEC000F857F /* BucketCollectionViewCell.swift */,
+				6BFF86BE2619277600AFDEA7 /* SensorCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41CB4077B26E06E55530635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF55C0EB46FD26842F96EF /* Pods-VegiTable.debug.xcconfig */,
+				9DB7E538887E1A4DDBDE5011 /* Pods-VegiTable.release.xcconfig */,
+				7B71A4C7D296F2B08C4267BB /* Pods-VegiTable-VegiTableUITests.debug.xcconfig */,
+				AF84DC9320AE9CBCC90A7861 /* Pods-VegiTable-VegiTableUITests.release.xcconfig */,
+				5BA291E0596CA7745E157036 /* Pods-VegiTableTests.debug.xcconfig */,
+				2A6A29208E2ECD9232A8152E /* Pods-VegiTableTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		406BD36B260AC67D00CB8798 /* VegiTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406BD399260AC67F00CB8798 /* Build configuration list for PBXNativeTarget "VegiTable" */;
+			buildPhases = (
+				89E7098A2252966A0F9C0268 /* [CP] Check Pods Manifest.lock */,
+				406BD368260AC67D00CB8798 /* Sources */,
+				406BD369260AC67D00CB8798 /* Frameworks */,
+				406BD36A260AC67D00CB8798 /* Resources */,
+				8BC13587E82956B113F58D62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VegiTable;
+			productName = VegiTable;
+			productReference = 406BD36C260AC67D00CB8798 /* VegiTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		406BD384260AC67F00CB8798 /* VegiTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406BD39C260AC67F00CB8798 /* Build configuration list for PBXNativeTarget "VegiTableTests" */;
+			buildPhases = (
+				06EB81FE49DF7A1A4B19E4A5 /* [CP] Check Pods Manifest.lock */,
+				406BD381260AC67F00CB8798 /* Sources */,
+				406BD382260AC67F00CB8798 /* Frameworks */,
+				406BD383260AC67F00CB8798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				406BD387260AC67F00CB8798 /* PBXTargetDependency */,
+			);
+			name = VegiTableTests;
+			productName = VegiTableTests;
+			productReference = 406BD385260AC67F00CB8798 /* VegiTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		406BD38F260AC67F00CB8798 /* VegiTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406BD39F260AC67F00CB8798 /* Build configuration list for PBXNativeTarget "VegiTableUITests" */;
+			buildPhases = (
+				F1016AE270E180EC4D1A7312 /* [CP] Check Pods Manifest.lock */,
+				406BD38C260AC67F00CB8798 /* Sources */,
+				406BD38D260AC67F00CB8798 /* Frameworks */,
+				406BD38E260AC67F00CB8798 /* Resources */,
+				6BDE300A7B02A715D0BE60D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				406BD392260AC67F00CB8798 /* PBXTargetDependency */,
+			);
+			name = VegiTableUITests;
+			productName = VegiTableUITests;
+			productReference = 406BD390260AC67F00CB8798 /* VegiTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		406BD364260AC67D00CB8798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					406BD36B260AC67D00CB8798 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					406BD384260AC67F00CB8798 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 406BD36B260AC67D00CB8798;
+					};
+					406BD38F260AC67F00CB8798 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 406BD36B260AC67D00CB8798;
+					};
+				};
+			};
+			buildConfigurationList = 406BD367260AC67D00CB8798 /* Build configuration list for PBXProject "VegiTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 406BD363260AC67D00CB8798;
+			productRefGroup = 406BD36D260AC67D00CB8798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				406BD36B260AC67D00CB8798 /* VegiTable */,
+				406BD384260AC67F00CB8798 /* VegiTableTests */,
+				406BD38F260AC67F00CB8798 /* VegiTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		406BD36A260AC67D00CB8798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40942102261AAC1B00AE1270 /* PairSensorView.xib in Resources */,
+				406BD37F260AC67F00CB8798 /* LaunchScreen.storyboard in Resources */,
+				406BD37C260AC67F00CB8798 /* Assets.xcassets in Resources */,
+				406BD377260AC67D00CB8798 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406BD383260AC67F00CB8798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406BD38E260AC67F00CB8798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06EB81FE49DF7A1A4B19E4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegiTableTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BDE300A7B02A715D0BE60D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegiTable-VegiTableUITests/Pods-VegiTable-VegiTableUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegiTable-VegiTableUITests/Pods-VegiTable-VegiTableUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegiTable-VegiTableUITests/Pods-VegiTable-VegiTableUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E7098A2252966A0F9C0268 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegiTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC13587E82956B113F58D62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegiTable/Pods-VegiTable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegiTable/Pods-VegiTable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegiTable/Pods-VegiTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1016AE270E180EC4D1A7312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegiTable-VegiTableUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		406BD368260AC67D00CB8798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98AE5252618AFEC000F857F /* BucketCollectionViewCell.swift in Sources */,
+				40A58B642619608E0045B32E /* CustomDelegate.swift in Sources */,
+				6B4AF29F2617E351001619D0 /* EditBucketVC.swift in Sources */,
+				6B4AF2942617AE3A001619D0 /* AddBucketVC.swift in Sources */,
+				40942101261AAC1B00AE1270 /* PairSensorView.swift in Sources */,
+				D9B090362619E3380042CC01 /* ViewPlantVC.swift in Sources */,
+				404EF13A2615168B0037AC91 /* ArchivedPlantsCollectionViewCell.swift in Sources */,
+				D9D6958F2612994D0035BAC7 /* GreenhouseCollectionViewCell.swift in Sources */,
+				406DD8CD261E848900FFCBE1 /* Notification.swift in Sources */,
+				406DD8C8261E847200FFCBE1 /* Network.swift in Sources */,
+				406DD8D2261E849400FFCBE1 /* User.swift in Sources */,
+				406BD489260FD0AB00CB8798 /* AboutVC.swift in Sources */,
+				406BD47A260FD05200CB8798 /* ArchivedPlantsVC.swift in Sources */,
+				4094210C261ABBAC00AE1270 /* EditPlantVC.swift in Sources */,
+				406BD424260C005D00CB8798 /* HomeVC.swift in Sources */,
+				406DD8D7261E84A200FFCBE1 /* Device.swift in Sources */,
+				406BD4912610042F00CB8798 /* ContainerVC.swift in Sources */,
+				406DD8E6261E84DF00FFCBE1 /* DeviceReading.swift in Sources */,
+				D98AE5322618B0E1000F857F /* ViewBucketVC.swift in Sources */,
+				406BD463260FC12D00CB8798 /* SideMenuController.swift in Sources */,
+				406BD47F260FD07100CB8798 /* SensorManagementVC.swift in Sources */,
+				406BD37A260AC67D00CB8798 /* VegiTable.xcdatamodeld in Sources */,
+				406BD468260FC17A00CB8798 /* ProfileVC.swift in Sources */,
+				40BFB0062615A68D005FE5EE /* AboutSection.swift in Sources */,
+				6B41BDB32617EC9E00C46B79 /* AddPlantTypeVC.swift in Sources */,
+				6B41BDB8261807FE00C46B79 /* InputFieldAssembly.swift in Sources */,
+				406BD3C7260BD5F700CB8798 /* CreateAccountVC.swift in Sources */,
+				6BFF86BF2619277600AFDEA7 /* SensorCollectionViewCell.swift in Sources */,
+				406BD370260AC67D00CB8798 /* AppDelegate.swift in Sources */,
+				406BD43B260CD34A00CB8798 /* MenuItem.swift in Sources */,
+				406DD8E1261E84BF00FFCBE1 /* Plant.swift in Sources */,
+				406BD46D260FC1D200CB8798 /* GreenhouseVC.swift in Sources */,
+				406BD372260AC67D00CB8798 /* SceneDelegate.swift in Sources */,
+				406DD8DC261E84B000FFCBE1 /* Bucket.swift in Sources */,
+				40942107261AB27C00AE1270 /* ViewBucketDataVC.swift in Sources */,
+				406BD3AD260ACEAC00CB8798 /* LoginVC.swift in Sources */,
+				40A58B5C26195F490045B32E /* AddPlantVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406BD381260AC67F00CB8798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406BD38A260AC67F00CB8798 /* VegiTableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406BD38C260AC67F00CB8798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406BD395260AC67F00CB8798 /* VegiTableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		406BD387260AC67F00CB8798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 406BD36B260AC67D00CB8798 /* VegiTable */;
+			targetProxy = 406BD386260AC67F00CB8798 /* PBXContainerItemProxy */;
+		};
+		406BD392260AC67F00CB8798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 406BD36B260AC67D00CB8798 /* VegiTable */;
+			targetProxy = 406BD391260AC67F00CB8798 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		406BD375260AC67D00CB8798 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406BD376260AC67D00CB8798 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		406BD37D260AC67F00CB8798 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406BD37E260AC67F00CB8798 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		406BD397260AC67F00CB8798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		406BD398260AC67F00CB8798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		406BD39A260AC67F00CB8798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CF55C0EB46FD26842F96EF /* Pods-VegiTable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegiTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheridan.softsquad.VegiTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		406BD39B260AC67F00CB8798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB7E538887E1A4DDBDE5011 /* Pods-VegiTable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegiTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheridan.softsquad.VegiTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		406BD39D260AC67F00CB8798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA291E0596CA7745E157036 /* Pods-VegiTableTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegiTableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheridan.softsquad.VegiTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VegiTable.app/VegiTable";
+			};
+			name = Debug;
+		};
+		406BD39E260AC67F00CB8798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6A29208E2ECD9232A8152E /* Pods-VegiTableTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegiTableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheridan.softsquad.VegiTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VegiTable.app/VegiTable";
+			};
+			name = Release;
+		};
+		406BD3A0260AC67F00CB8798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B71A4C7D296F2B08C4267BB /* Pods-VegiTable-VegiTableUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegiTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheridan.softsquad.VegiTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VegiTable;
+			};
+			name = Debug;
+		};
+		406BD3A1260AC67F00CB8798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF84DC9320AE9CBCC90A7861 /* Pods-VegiTable-VegiTableUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegiTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheridan.softsquad.VegiTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VegiTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		406BD367260AC67D00CB8798 /* Build configuration list for PBXProject "VegiTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406BD397260AC67F00CB8798 /* Debug */,
+				406BD398260AC67F00CB8798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406BD399260AC67F00CB8798 /* Build configuration list for PBXNativeTarget "VegiTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406BD39A260AC67F00CB8798 /* Debug */,
+				406BD39B260AC67F00CB8798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406BD39C260AC67F00CB8798 /* Build configuration list for PBXNativeTarget "VegiTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406BD39D260AC67F00CB8798 /* Debug */,
+				406BD39E260AC67F00CB8798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406BD39F260AC67F00CB8798 /* Build configuration list for PBXNativeTarget "VegiTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406BD3A0260AC67F00CB8798 /* Debug */,
+				406BD3A1260AC67F00CB8798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		406BD378260AC67D00CB8798 /* VegiTable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				406BD379260AC67D00CB8798 /* VegiTable.xcdatamodel */,
+			);
+			currentVersion = 406BD379260AC67D00CB8798 /* VegiTable.xcdatamodel */;
+			path = VegiTable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 406BD364260AC67D00CB8798 /* Project object */;
+}
